@@ -1,60 +1,81 @@
+import { Link } from "react-router-dom";
+
 export default function ContactPage() {
   return (
-    <section className="min-h-screen bg-slate-50 flex items-center">
 
+    <section className="min-h-screen bg-slate-800 flex flex-col justify-center pt-24">
+
+      {/* HERO NAV BAR (ONLY HOME BUTTON) */}
+      <div className="fixed top-0 left-0 w-full bg-white shadow z-50">
+
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+          <h1 className="text-xl font-bold">
+            ConsultingCo
+          </h1>
+
+          {/* HOME BUTTON */}
+          <Link
+  to="/#home"
+  className="text-black hover:text-blue-600 transition-colors duration-300"
+>
+  Home
+</Link>
+
+
+        </div>
+
+      </div>
+
+      {/* FORM CARD */}
       <div className="max-w-xl mx-auto bg-white shadow-xl rounded-2xl p-8 w-full">
 
         <h2 className="text-3xl font-bold mb-6 text-center">
           Contact Us
         </h2>
 
-        <form className="space-y-5">
+        <form
+  action="https://formsubmit.co/kavikasiraman@gmail.com"
+  method="POST"
+  className="space-y-5"
+>
 
-          {/* Full Name */}
-          <div>
-            <label className="block mb-1 font-medium">
-              Full Name
-            </label>
-            <input
-              type="text"
-              placeholder="Enter your full name"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_template" value="table" />
 
-          {/* Email */}
-          <div>
-            <label className="block mb-1 font-medium">
-              Email Address
-            </label>
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
+  <input
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    required
+    className="w-full border rounded-lg px-4 py-3"
+  />
 
-          {/* Message */}
-          <div>
-            <label className="block mb-1 font-medium">
-              Message
-            </label>
-            <textarea
-              rows="4"
-              placeholder="How can we help you?"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            ></textarea>
-          </div>
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+    className="w-full border rounded-lg px-4 py-3"
+  />
 
-          {/* Button */}
-          <button
-            type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium"
-          >
-            Send Message
-          </button>
+  <textarea
+    name="message"
+    placeholder="How can we help you?"
+    rows="4"
+    required
+    className="w-full border rounded-lg px-4 py-3"
+  ></textarea>
 
-        </form>
+  <button
+    type="submit"
+    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg"
+  >
+    Send Message
+  </button>
+
+</form>
+
 
       </div>
 

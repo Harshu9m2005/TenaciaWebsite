@@ -3,11 +3,14 @@ import ITSection from "../sections/ITSection";
 import HRSection from "../sections/HRSection";
 import TeamSection from "../sections/TeamSection";
 import ContactSection from "../sections/ContactSection";
-import heroImg from "../assets/hero.svg";
-import hero2Img from "../assets/hero2.svg";
-import hero3Img from "../assets/hero4.svg";
+import heroImg from "../assets/hero1.jpg";
+import hero2Img from "../assets/hero2.jpg";
+import hero3Img from "../assets/hero3.jpg";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import WhyChooseUs from "../sections/WhyChooseUs";
+import ProcessSection from "../sections/ProcessSection";
+
 
 export default function Home() {
 
@@ -46,82 +49,94 @@ export default function Home() {
       transition={{ duration: 0.8 }}
     >
 
-     <section className="min-h-screen bg-gradient-to-r from-slate-900 to-slate-800 text-white relative overflow-hidden">
+     <section
+  id="home"
+  className="min-h-screen bg-gradient-to-r from-slate-900 to-slate-800 text-white relative overflow-hidden"
+>
+
 
   {/* SLIDER */}
-  <div
-    className="flex min-h-screen transition-transform duration-700 ease-in-out"
-    style={{ transform: `translateX(-${current * 100}%)` }}
-  >
+  {/* HERO SLIDER */}
+<div className="relative min-h-screen">
 
-    {slides.map((slide, index) => (
-      <motion.div
-        key={index}
-        className="min-w-full flex items-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: current === index ? 1 : 0 }}
-        transition={{ duration: 0.6 }}
-      >
+  {slides.map((slide, index) => (
 
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <motion.div
+      key={index}
+      className="absolute inset-0 flex items-center justify-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: current === index ? 1 : 0 }}
+      transition={{ duration: 1 }}
+      style={{
+        backgroundImage: `url(${slide.img})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      }}
+    >
 
-          {/* TEXT */}
-          <motion.div
-            initial={{ x: -40, opacity: 0 }}
-            animate={current === index ? { x: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              {slide.title}
-            </h1>
+      {/* DARK OVERLAY */}
+      <div className="absolute inset-0 bg-black/60"></div>
 
-            <p className="text-slate-300 text-lg mb-8">
-              {slide.desc}
-            </p>
+      {/* CONTENT */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
 
-            <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium">
-              Get Started
-            </button>
-          </motion.div>
+        <motion.h1
+          initial={{ y: 30, opacity: 0 }}
+          animate={current === index ? { y: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.8 }}
+          className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6"
+        >
+          {slide.title}
+        </motion.h1>
 
-          {/* IMAGE */}
-          <motion.div
-            className="hidden md:block"
-            initial={{ x: 40, opacity: 0 }}
-            animate={current === index ? { x: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.6 }}
-          >
-            <img src={slide.img} alt="Hero" />
-          </motion.div>
+        <motion.p
+          initial={{ y: 30, opacity: 0 }}
+          animate={current === index ? { y: 0, opacity: 1 } : {}}
+          transition={{ duration: 1 }}
+          className="text-slate-200 text-lg mb-8 max-w-2xl mx-auto"
+        >
+          {slide.desc}
+        </motion.p>
 
-        </div>
+        <motion.a
+          href="#contact"
+          whileHover={{ scale: 1.05 }}
+          className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-medium text-lg"
+        >
+          Get Started
+        </motion.a>
 
-      </motion.div>
-    ))}
+      </div>
 
-  </div>
+    </motion.div>
 
-  {/* DOT NAVIGATION */}
-  <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3">
+  ))}
 
-    {slides.map((_, index) => (
-      <button
-        key={index}
-        onClick={() => setCurrent(index)}
-        className={`w-3 h-3 rounded-full transition-all duration-300
-        ${current === index ? "bg-blue-500 scale-125" : "bg-slate-500"}`}
-      ></button>
-    ))}
+</div>
 
-  </div>
 
+{/* DOTS */}
+<div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+
+  {slides.map((_, index) => (
+    <button
+      key={index}
+      onClick={() => setCurrent(index)}
+      className={`w-3 h-3 rounded-full transition-all duration-300
+      ${current === index ? "bg-blue-500 scale-125" : "bg-slate-400"}`}
+    ></button>
+  ))}
+
+</div>
 </section>
 
 
       {/* SCROLL CONTENT */}
       <AboutSection />
+      <WhyChooseUs />
       <ITSection />
       <HRSection />
+      <ProcessSection />
       <TeamSection />
       <ContactSection />
 
