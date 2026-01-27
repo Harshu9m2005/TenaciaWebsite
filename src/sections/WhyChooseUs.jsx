@@ -2,23 +2,24 @@ import { motion } from "framer-motion";
 
 export default function WhyChooseUs() {
   const features = [
-    {
-      title: "Startup Focused",
-      desc: "We understand early-stage challenges and build solutions designed for fast growth."
-    },
-    {
-      title: "Affordable Consulting",
-      desc: "Premium consulting quality without enterprise-level pricing."
-    },
-    {
-      title: "Modern Technology",
-      desc: "We use latest tools and frameworks to deliver scalable solutions."
-    },
-    {
-      title: "Dedicated Support",
-      desc: "Direct communication and continuous support throughout your journey."
-    }
-  ];
+  {
+    title: "Research & Innovation",
+    desc: "We continuously embrace new ideas and emerging technologies to stay at the forefront of innovation and deliver future-ready solutions."
+  },
+  {
+    title: "Security & Reliability",
+    desc: "Our solutions are built with a strong emphasis on data confidentiality, security best practices, and proven engineering methodologies."
+  },
+  {
+    title: "Integrity & Transparency",
+    desc: "We believe in open communication, ethical practices, and accountability in every engagement with our clients and partners."
+  },
+  {
+    title: "Customer-Centric Mindset",
+    desc: "Our customer-first approach drives us to deliver meaningful value and build long-term relationships based on trust and mutual respect."
+  }
+];
+
 
   return (
     <section id="wcu" className="py-24  scroll-mt-24  bg-slate-900 text-white mt-20">

@@ -3,11 +3,28 @@ import { motion } from "framer-motion";
 export default function ProcessSection() {
 
   const steps = [
-    { step: "01", title: "Discover", desc: "We understand your business goals and challenges." },
-    { step: "02", title: "Plan", desc: "We design customized strategies and solutions." },
-    { step: "03", title: "Build", desc: "Our team executes with precision and quality." },
-    { step: "04", title: "Deliver", desc: "We launch and optimize for best performance." },
-  ];
+  {
+    step: "01",
+    title: "Discover & Review",
+    desc: "We assess business requirements, technical needs, risks, and objectives to establish a strong foundation."
+  },
+  {
+    step: "02",
+    title: "Analyze & Design",
+    desc: "Our experts define solution architecture, technology stack, and delivery models aligned with industry best practices."
+  },
+  {
+    step: "03",
+    title: "Implement & Transform",
+    desc: "We execute development, modernization, cloud adoption, and DevOps initiatives with precision and agility."
+  },
+  {
+    step: "04",
+    title: "Operate & Optimize",
+    desc: "Through managed services, monitoring, and continuous improvement, we ensure stability, security, and performance."
+  }
+];
+
 
   return (
     <section id="hww"className="py-24 scroll-mt-24 bg-slate-800 text-white">

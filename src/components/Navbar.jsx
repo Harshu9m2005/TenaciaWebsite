@@ -29,7 +29,7 @@ export default function Navbar() {
           className={`text-xl font-bold cursor-pointer
           ${scrolled ? "text-black" : "text-white"}`}
         >
-          ConsultingCo
+          Tenacia Solutions
         </h1>
 
         {/* DESKTOP MENU */}
@@ -40,10 +40,10 @@ export default function Navbar() {
 
           <a href="#home" className="hover:text-blue-500">Home</a>
           <a href="#about" className="hover:text-blue-500">About</a>
-          <a href="#wcu" className="hover:text-blue-500">Why choose us</a>
-          <a href="#it" className="hover:text-blue-500">IT</a>
-          <a href="#hr" className="hover:text-blue-500">HR</a>
-          <a href="#hww" className="hover:text-blue-500">How we work</a>
+          <a href="#wcu" className="hover:text-blue-500">Why Choose Us</a>
+<a href="#it" className="hover:text-blue-500">Services</a>
+<a href="#hr" className="hover:text-blue-500">Engagement Models</a>
+<a href="#hww" className="hover:text-blue-500">Delivery Approach</a>
           <a href="#team" className="hover:text-blue-500">Team</a>
           
           <a href="#contact" className="hover:text-blue-500">Contact</a>
@@ -65,30 +65,48 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       {open && (
 
-        <div
-          className="md:hidden absolute right-4 top-16
-          bg-white text-black w-48 rounded-xl shadow-xl
-          px-4 py-4 space-y-3"
-        >
+  <div
+    className="md:hidden absolute right-4 top-16
+    bg-white text-black w-52 rounded-xl shadow-xl
+    px-4 py-5 flex flex-col gap-4"
+  >
 
-          <a href="#home" onClick={() => setOpen(false)}>HOME</a>
-          <a href="#about" onClick={() => setOpen(false)}>ABOUT</a>
-           <a href="#wcu" onClick={() => setOpen(false)}>WHY CHOOSE US</a>
-          <a href="#it" onClick={() => setOpen(false)}>IT</a>
-          <a href="#hr" onClick={() => setOpen(false)}>HR</a>
-           <a href="#hww" onClick={() => setOpen(false)}>HOW WE WORK</a>
-          <a href="#team" onClick={() => setOpen(false)}>TEAM</a>
+    <a href="#home" onClick={() => setOpen(false)} className="block hover:text-blue-500">
+      HOME
+    </a>
 
-          <Link
-            to="/contact-us"
-            onClick={() => setOpen(false)}
-          >
-            CONTACT
-          </Link>
+    <a href="#about" onClick={() => setOpen(false)} className="block hover:text-blue-500">
+      ABOUT
+    </a>
 
-        </div>
+    <a href="#wcu" onClick={() => setOpen(false)} className="block hover:text-blue-500">
+      WHY CHOOSE US
+    </a>
 
-      )}
+    <a href="#it" onClick={() => setOpen(false)} className="block hover:text-blue-500">
+      IT
+    </a>
+
+    <a href="#hr" onClick={() => setOpen(false)} className="block hover:text-blue-500">
+      HR
+    </a>
+
+    <a href="#hww" onClick={() => setOpen(false)} className="block hover:text-blue-500">
+      HOW WE WORK
+    </a>
+
+    <a href="#team" onClick={() => setOpen(false)} className="block hover:text-blue-500">
+      TEAM
+    </a>
+
+    <a href="#contact" onClick={() => setOpen(false)} className="block hover:text-blue-500">
+      CONTACT
+    </a>
+
+  </div>
+
+)}
+
 
     </nav>
   );

@@ -4,27 +4,28 @@ import { Cpu, Layers, Code2, Rocket } from "lucide-react";
 export default function ITSection() {
 
   const steps = [
-    {
-      title: "Requirement Analysis",
-      desc: "We understand your business goals and technical requirements to design scalable solutions.",
-      icon: <Cpu size={28} />
-    },
-    {
-      title: "System Architecture",
-      desc: "We create secure and high-performance system architectures tailored to your startup needs.",
-      icon: <Layers size={28} />
-    },
-    {
-      title: "Development & Integration",
-      desc: "Agile development with seamless API and platform integrations.",
-      icon: <Code2 size={28} />
-    },
-    {
-      title: "Testing & Deployment",
-      desc: "Rigorous testing and optimized deployment to ensure reliability and speed.",
-      icon: <Rocket size={28} />
-    }
-  ];
+  {
+    title: "Solution Architecture",
+    desc: "Designing robust, secure, and scalable system architectures aligned with business objectives and industry best practices.",
+    icon: <Layers size={28} />
+  },
+  {
+    title: "Application & Product Development",
+    desc: "Developing web, mobile, and enterprise applications using modern frameworks, secure development practices, and agile methodologies.",
+    icon: <Code2 size={28} />
+  },
+  {
+    title: "Cloud, DevOps & SaaS",
+    desc: "Implementing cloud-native solutions, CI/CD pipelines, DevOps practices, and SaaS platforms to improve efficiency and reliability.",
+    icon: <Cpu size={28} />
+  },
+  {
+    title: "Maintenance & Continuous Support",
+    desc: "Providing application maintenance, performance optimization, security audits, and ongoing support to ensure long-term stability.",
+    icon: <Rocket size={28} />
+  }
+];
+
 
   return (
     <section id="it" className="py-32 bg-white">
@@ -40,11 +41,12 @@ export default function ITSection() {
           className="mb-20 text-center"
         >
           <h2 className="text-5xl font-bold text-slate-900 mb-4">
-            IT Services
-          </h2>
-          <p className="text-slate-600 text-lg">
-            Technology solutions designed to scale your startup faster
-          </p>
+  Core Technology Services
+</h2>
+<p className="text-slate-600 text-lg">
+  End-to-end software engineering capabilities built for security, scalability, and performance
+</p>
+
         </motion.div>
 
         {/* TIMELINE */}

@@ -37,16 +37,19 @@ export default function AboutVisionSection() {
           </h2>
 
           <p className="text-slate-600 text-lg leading-relaxed">
-            We are a growing startup focused on building smart IT and HR solutions that help
-            businesses operate faster, better, and smarter. Our team combines industry expertise
-            with innovative thinking to provide actionable solutions tailored to your unique needs.
-          </p>
+  Tenacia Solutions is a software engineering firm focused on creating innovative
+  applications and technology-driven products. In today’s rapidly evolving digital
+  landscape, businesses require agile and reliable solutions to maintain their
+  competitive edge, and we deliver exactly that.
+</p>
 
-          <p className="text-slate-600 text-lg leading-relaxed">
-            From small startups to scaling enterprises, we work closely with our clients to
-            understand their goals, challenges, and opportunities. Our approach balances
-            technology, strategy, and human insights to drive measurable results.
-          </p>
+<p className="text-slate-600 text-lg leading-relaxed">
+  Our strong technological foundation, combined with a team of skilled professionals,
+  enables us to deliver secure, scalable, and future-ready solutions. We emphasize
+  data confidentiality, proven methodologies, and open communication while developing
+  a deep understanding of industry-specific requirements.
+</p>
+
         </motion.div>
 
       </div>
@@ -66,10 +69,12 @@ export default function AboutVisionSection() {
             Our Vision
           </h2>
           <p className="text-slate-700 leading-relaxed">
-            To become a trusted consulting partner for startups and growing businesses
-            by delivering smart, scalable, and future-ready solutions. We aim to simplify
-            complex business challenges and turn them into growth opportunities.
-          </p>
+  We envision a future where our solutions contribute to sustainable development,
+  technological leadership, and positive global impact. By continuously innovating
+  and expanding our global presence, we strive to set new standards in quality,
+  customer satisfaction, and industry transformation.
+</p>
+
         </div>
 
         {/* MISSION */}
@@ -78,9 +83,12 @@ export default function AboutVisionSection() {
             Our Mission
           </h2>
           <p className="text-slate-700 leading-relaxed">
-            Our mission is to empower businesses with technology and strategic consulting
-            that improves efficiency, drives growth, and builds long-term success.
-          </p>
+  Our mission is to leverage advanced technologies to develop innovative solutions
+  that empower businesses and individuals. We are committed to excellence, quality,
+  and delivering meaningful value by aligning engineering expertise with our
+  clients’ long-term business objectives.
+</p>
+
         </div>
 
       </motion.div>

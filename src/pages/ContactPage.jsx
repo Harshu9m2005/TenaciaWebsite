@@ -35,7 +35,7 @@ export default function ContactPage() {
         </h2>
 
         <form
-  action="https://formsubmit.co/kavikasiraman@gmail.com"
+  action="https://formsubmit.co/support@tenaciasolutions.com"
   method="POST"
   className="space-y-5"
 >

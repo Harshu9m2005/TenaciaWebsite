@@ -15,22 +15,24 @@ import ProcessSection from "../sections/ProcessSection";
 export default function Home() {
 
   const slides = [
-    {
-      title: "Driving Business Growth Through Smart Consulting",
-      desc: "We deliver IT and HR solutions that empower companies to scale faster, operate smarter, and compete globally.",
-      img: heroImg
-    },
-    {
-      title: "Transform Your Digital Future",
-      desc: "Modern technology strategies built for performance, security, and scalability.",
-      img: hero2Img
-    },
-    {
-      title: "Trusted Consulting Partner",
-      desc: "Helping organizations succeed with innovation and expertise.",
-      img: hero3Img
-    }
-  ];
+  {
+    title: "Tenacia Solutions",
+    desc: "Reinventing Mind Sets through innovative, secure, and scalable software engineering solutions.",
+    img: heroImg
+  },
+  {
+    title: "Future-Ready Technology Solutions",
+    desc: "We help businesses stay competitive with agile development, advanced engineering, and proven methodologies.",
+    img: hero2Img
+  },
+  {
+    title: "Your Trusted Software Engineering Partner",
+    desc: "Delivering reliable, high-quality, and future-proof solutions tailored to business needs.",
+    img: hero3Img
+  }
+];
+
+
 
   const [current, setCurrent] = useState(0);
 
@@ -103,7 +105,7 @@ export default function Home() {
           whileHover={{ scale: 1.05 }}
           className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-medium text-lg"
         >
-          Get Started
+          Explore Our Offerings
         </motion.a>
 
       </div>

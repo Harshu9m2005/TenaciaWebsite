@@ -4,27 +4,28 @@ import { Users, ClipboardCheck, Briefcase, TrendingUp } from "lucide-react";
 export default function HRSection() {
 
   const steps = [
-    {
-      title: "Talent Acquisition",
-      desc: "We help you hire the right talent aligned with your startup culture.",
-      icon: <Users size={28} />
-    },
-    {
-      title: "Onboarding Process",
-      desc: "Structured onboarding programs to increase productivity from day one.",
-      icon: <ClipboardCheck size={28} />
-    },
-    {
-      title: "HR Operations",
-      desc: "Payroll, compliance, and employee lifecycle management handled professionally.",
-      icon: <Briefcase size={28} />
-    },
-    {
-      title: "Performance Growth",
-      desc: "Employee development and retention strategies to scale your workforce.",
-      icon: <TrendingUp size={28} />
-    }
-  ];
+  {
+    title: "Dedicated Teams",
+    desc: "Full-time, scalable development and IT teams that integrate seamlessly with your organization, enabling long-term collaboration and growth.",
+    icon: <Users size={28} />
+  },
+  {
+    title: "POD Team Model",
+    desc: "Cross-functional POD teams including business analysts, senior and junior developers, and testers, designed for efficient and agile delivery.",
+    icon: <ClipboardCheck size={28} />
+  },
+  {
+    title: "Managed Services",
+    desc: "Comprehensive IT service management covering cloud, databases, applications, monitoring, and support using ITIL-aligned processes.",
+    icon: <Briefcase size={28} />
+  },
+  {
+    title: "Flexible Engagement Models",
+    desc: "Time & Material and Fixed Price models that provide transparency, scalability, and clear delivery expectations.",
+    icon: <TrendingUp size={28} />
+  }
+];
+
 
   return (
     <section id="hr" className="py-32 bg-white">
@@ -39,11 +40,12 @@ export default function HRSection() {
           className="mb-20 text-center"
         >
           <h2 className="text-5xl font-bold text-slate-900 mb-4">
-            HR Services
-          </h2>
-          <p className="text-slate-600 text-lg">
-            Building strong teams for fast-growing startups
-          </p>
+  Talent & Managed Services
+</h2>
+<p className="text-slate-600 text-lg">
+  Flexible engagement models and expert teams aligned with your business goals
+</p>
+
         </motion.div>
 
         {/* TIMELINE */}

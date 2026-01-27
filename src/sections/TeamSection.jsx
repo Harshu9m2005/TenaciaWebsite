@@ -8,12 +8,13 @@ import teamBg from "../assets/team.jpg";
 export default function TeamSection() {
 
   const team = [
-    { name: "Alex Brown", role: "CEO & Founder", img: team1 },
-    { name: "Marina Doe", role: "Product Manager", img: team0 },
-    { name: "Michael Smith", role: "CTO", img: team1 },
-    { name: "Johnson Lee", role: "HR Lead", img: team1 },
-    { name: "Sarah White", role: "UI Designer", img: team0 },
-  ];
+  { name: "Engineering Leadership", role: "Architects & Senior Developers", img: team1 },
+  { name: "Product Strategy", role: "Business Analysts & Product Specialists", img: team0 },
+  { name: "Technology Experts", role: "Cloud, DevOps & Security Professionals", img: team1 },
+  { name: "Quality Assurance", role: "Testing & Compliance Specialists", img: team1 },
+  { name: "Support & Operations", role: "Managed Services & IT Operations", img: team0 },
+];
+
 
   return (
     <section
@@ -38,8 +39,9 @@ export default function TeamSection() {
 
           {/* TITLE */}
           <h2 className="text-4xl font-bold text-center mb-14 text-white">
-            Meet Our Team
-          </h2>
+  Our Expertise & Leadership
+</h2>
+
 
           {/* TOP ROW */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-10">
